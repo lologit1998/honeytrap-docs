@@ -11,7 +11,11 @@ The Redis service will simulate a redis server. Currently the INFO command has b
 ```
 [service.redis]
 type="redis"
-port="tcp/6379"
 version="4.0.6"
-os="Linux 4.9.49-moby x86_64"
+os="Ubuntu"
+
+[[port]]
+port="tcp/6379"
+services=["redis"]
+
 ```
