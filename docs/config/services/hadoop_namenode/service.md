@@ -6,13 +6,13 @@ title: Hadoop NameNode Service
 
 {% endcapture %}
 
-The Hadoop service will simulate a hadoop database.
+The Hadoop service will simulate a hadoop database. Currently configured for the following querry :
+  -/jmx?qry=Hadoop:service=NameNode,name=NameNodeInfo
+  -/jmx?qry=Hadoop:service=NameNode,name=FSNamesystemState
 
 ```
 [service.hadoop_namenode]
 type="hadoop_namenode"
-version="2.7.1"
-os="Ubuntu"
 
 [[port]]
 port="tcp/50070"
